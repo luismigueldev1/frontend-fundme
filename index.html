@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fund Me Web3 App</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <h1 class="text-center mb-3">Fund Me Web3 App</h1>
+                <div class="col d-flex justify-content-center">
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="connect-button"
+                    >
+                        Connect to Metamask
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col d-flex justify-content-center">
+                    <div class="row">
+                        <label for="inputPassword" class="col col-form-label"
+                            >Amout of ETH</label
+                        >
+                        <div class="col-4">
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="eth-amount"
+                                placeholder="ex: 0.1"
+                            />
+                        </div>
+                        <div class="col">
+                            <button
+                                class="btn btn-success w-100"
+                                id="fund-button"
+                            >
+                                Fund
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-2">
+                    <div class="row">
+                        <label for="inputPassword" class="col col-form-label"
+                            >Balance</label
+                        >
+                        <div class="col-4">
+                            <input
+                                type="text"
+                                class="form-control w-100"
+                                id="eth-balance"
+                                readonly
+                            />
+                        </div>
+                        <div class="col">
+                            <button
+                                class="btn btn-warning w-100"
+                                id="balance-button"
+                            >
+                                Get Balance
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mt-2">
+                    <div class="row">
+                        <div class="col">
+                            <button
+                                class="btn btn-danger w-100"
+                                id="withdraw-button"
+                            >
+                                Withdraw
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/script.js" type="module"></script>
+    </body>
+</html>
